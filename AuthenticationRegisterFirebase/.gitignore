@@ -107,3 +107,38 @@ InitTestScene*.unity*
 
 # lsdtrackingbat
 /lfs-tracking.bat
+# FIREBASE
+
+
+# Credenciales (CRITICO - nunca subir)
+google-services.json
+GoogleService-Info.plist
+
+# SDK regenerable (se reimporta con los .unitypackage)
+/[Aa]ssets/Firebase/
+/[Aa]ssets/Firebase.meta
+/[Aa]ssets/ExternalDependencyManager/
+/[Aa]ssets/ExternalDependencyManager.meta
+/[Aa]ssets/PlayServicesResolver/
+/[Aa]ssets/PlayServicesResolver.meta
+/[Aa]ssets/Plugins/Android/Firebase/
+/[Aa]ssets/Plugins/iOS/Firebase/
+
+# Configuracion Android generada por Firebase
+/[Aa]ssets/Plugins/Android/FirebaseApp.androidlib/
+/[Aa]ssets/Plugins/Android/firebaseauth.androidlib/
+
+# ====================
+# IDE
+# ====================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ====================
+# OS
+# ====================
+.DS_Store
+Thumbs.db
+desktop.ini

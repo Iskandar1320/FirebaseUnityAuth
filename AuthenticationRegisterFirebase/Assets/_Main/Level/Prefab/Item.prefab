@@ -284,6 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5677711097513695407}
   - component: {fileID: 200563016268673792}
+  - component: {fileID: -1893540062689722370}
   - component: {fileID: 6410896615990144549}
   m_Layer: 5
   m_Name: Item
@@ -342,7 +343,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &6410896615990144549
+--- !u!114 &-1893540062689722370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,6 +351,21 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4115555482408316806}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02dc258c63ef30c4da7722c19d2e467b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RankingItemUIFirebase
+  positionText: {fileID: 8553174900714159041}
+  usernameText: {fileID: 3173664187811141404}
+  scoreText: {fileID: 1078954279497056211}
+--- !u!114 &6410896615990144549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115555482408316806}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 873707c644bcbae48aa6eb1ba2d83b2b, type: 3}
   m_Name: 

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "646019496025",
+    "firebase_url": "https://fir-auth-93a31-default-rtdb.firebaseio.com",
+    "project_id": "fir-auth-93a31",
+    "storage_bucket": "fir-auth-93a31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646019496025:android:20e93db99988006c785948",
+        "android_client_info": {
+          "package_name": "com.Iskandar1320.FirebaseAuth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoRbFGXzr7DFqPdYl1HrCZU-Ok0UWbwMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

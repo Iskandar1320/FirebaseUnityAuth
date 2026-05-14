@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickRegister
         m_Mode: 1
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickLogout
         m_Mode: 1
@@ -619,7 +619,6 @@ Transform:
   - {fileID: 1609908953}
   - {fileID: 1159684536}
   - {fileID: 570672933}
-  - {fileID: 950030095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210868197
@@ -1287,7 +1286,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickLogout
         m_Mode: 1
@@ -1893,7 +1892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 570672933}
-  - component: {fileID: 570672934}
+  - component: {fileID: 570672935}
   m_Layer: 0
   m_Name: --- Ranking ---
   m_TagString: Untagged
@@ -1916,7 +1915,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 156848502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &570672934
+--- !u!114 &570672935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1925,13 +1924,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 570672932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78ac00cf55d9b0242beebff9b6d27f0d, type: 3}
+  m_Script: {fileID: 11500000, guid: e41d232904b0f4341be11bab44e2597b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RankingManager
-  apiClient: {fileID: 950030096}
-  uiManager: {fileID: 728477017}
+  m_EditorClassIdentifier: Assembly-CSharp::FirebaseRankingManager
+  uiManager: {fileID: 728477018}
   rankingContainer: {fileID: 220395362}
-  rankingItemPrefab: {fileID: 6410896615990144549, guid: b855d1a2681e51940a2f4f7bc03b40de, type: 3}
+  rankingItemPrefab: {fileID: -1893540062689722370, guid: b855d1a2681e51940a2f4f7bc03b40de, type: 3}
+  maxRankingItems: 10
 --- !u!1 &572277870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickLogin
         m_Mode: 1
@@ -2368,7 +2367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: UserName
+  m_text: Email
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2596,7 +2595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 728477016}
-  - component: {fileID: 728477017}
+  - component: {fileID: 728477018}
   m_Layer: 0
   m_Name: --- Ui ---
   m_TagString: Untagged
@@ -2619,7 +2618,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 156848502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &728477017
+--- !u!114 &728477018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2628,22 +2627,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 728477015}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433b812c719a2df4b8f99dc0dda0d2d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f5129baeb3977f4a8c872ee5314ec01, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  m_EditorClassIdentifier: Assembly-CSharp::UIManagerFireBase
   authPanel: {fileID: 1711644142}
   homePanel: {fileID: 381652095}
   rankingPanel: {fileID: 1146241898}
-  usernameInputField: {fileID: 974560961}
+  emailInputField: {fileID: 974560961}
   passwordInputField: {fileID: 882358819}
   statusText: {fileID: 2126931206}
-  scoreText: {fileID: 743463354}
   usernameHomeText: {fileID: 2087514959}
+  scoreText: {fileID: 743463354}
   projectNameText: {fileID: 1914627695}
-  mensajeInicioInvalido: {fileID: 958066382}
-  authManager: {fileID: 1159684535}
-  userManager: {fileID: 1609908954}
-  rankingManager: {fileID: 570672934}
+  projectLabel: Alejandro Velasquez Rave
+  authManager: {fileID: 1159684537}
+  userManager: {fileID: 1609908955}
+  rankingManager: {fileID: 570672935}
 --- !u!1 &731298649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,51 +3861,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882358817}
   m_CullTransparentMesh: 1
---- !u!1 &950030094
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 950030095}
-  - component: {fileID: 950030096}
-  m_Layer: 0
-  m_Name: --- ApiClient ---
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &950030095
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950030094}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 156848502}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &950030096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950030094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b401eacaf80f1a4b8f3478ea0f32633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ApiClient
-  baseUrl: http://127.0.0.1:1234
 --- !u!1 &958066382
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,7 +4158,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickShowRanking
         m_Mode: 1
@@ -4473,7 +4427,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickShowRanking
         m_Mode: 1
@@ -4532,7 +4486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159684536}
-  - component: {fileID: 1159684535}
+  - component: {fileID: 1159684537}
   m_Layer: 0
   m_Name: --- Auth ---
   m_TagString: Untagged
@@ -4540,21 +4494,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1159684535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159684534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8428eb9af89afe4b9cd8ad18232b7df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AuthManager
-  apiClient: {fileID: 950030096}
-  uiManager: {fileID: 728477017}
-  userManager: {fileID: 1609908954}
 --- !u!4 &1159684536
 Transform:
   m_ObjectHideFlags: 0
@@ -4570,6 +4509,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 156848502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159684537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159684534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abdf93f8fccff940ba8e1f9b8eda38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirebaseAuthManager
+  uiManager: {fileID: 728477018}
+  userManager: {fileID: 1609908955}
 --- !u!1 &1180305991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,7 +5601,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickScore
         m_Mode: 1
@@ -5986,7 +5939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1609908953}
-  - component: {fileID: 1609908954}
+  - component: {fileID: 1609908955}
   m_Layer: 0
   m_Name: --- User ---
   m_TagString: Untagged
@@ -6009,7 +5962,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 156848502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1609908954
+--- !u!114 &1609908955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6018,11 +5971,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1609908952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 734894ddbefb21442980d113673b9999, type: 3}
+  m_Script: {fileID: 11500000, guid: 71071fe4e09fdc4488ea387b9a93c5a1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UserManager
-  apiClient: {fileID: 950030096}
-  uiManager: {fileID: 728477017}
+  m_EditorClassIdentifier: Assembly-CSharp::FirebaseUserManager
+  uiManager: {fileID: 728477018}
 --- !u!1 &1622080593
 GameObject:
   m_ObjectHideFlags: 0
@@ -7400,7 +7352,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728477017}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OnClickSaveScore
         m_Mode: 1
